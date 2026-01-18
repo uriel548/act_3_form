@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formsty.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">PERFIL PROFECIONAL</h1>
+        <nav class="menu-navegacion">
+        <a href="">Perfil</a>
+        <a href="">proyectos</a>
+        <a href="formulario.html">Contacto</a>
+    </nav>
+
+
+    </header>
+
+    <div class="container">
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <form >
+            <div class="form-grupo">
+                <label for="nombre">ingresa tu nombre completo:</label>
+                <input type="text" id="nombre" name="completname" autofocus
+                required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="email">correo electronico:</label>
+                <input type="email" name="email" id="email" required>
+
+            </div>
+
+            <div class="form-grupo">
+                <label for="phone">Telefono:</label>
+                <input type="tel" id="phone" name="telefono"
+                placeholder="5523189045" pattern="[0-9]{10}"
+                title="deben ser 10 numeros" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="asunto">Asunto/Motivo:</label>
+                <select name="asunto" id="asunto">
+                    <option value="">Selecione un asunto</option>
+                    <option> Oferta Laboral</option>
+                    <option> Colaboración</option>
+                    <option> Consulta tecnica</option>
+                    <option> Otro</option>
+                </select required>
+
+            </div>
+
+            <div class="form-grupo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje-contacto"
+                rows="5" cols="50" placeholder="describe tu mensaje en detalle"
+                maxlength="300"></textarea>
+            </div>
+
+            <div class="form-checkbox">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">
+                  Acepto la politica de privacidad
+                  y terminos de uso  
+                </label>
+
+            </div>
+
+
+            <div class="botones-creados">
+                <button type="reset" class="boton-borrar">Limpiar formulario</button>
+                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+            </div>
+        </form>    
+
+    </div>
+
+    <footer>
+        <p>
+            se proporcionan diferentes redes de contacto.
+        </p>
+
+    </footer>    
+</body>
+</html>
