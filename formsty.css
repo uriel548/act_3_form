@@ -19,6 +19,7 @@ header {
     justify-content: flex-end;
     gap: 20PX;
     padding-right: 20PX;
+    flex-wrap: wrap;
     
 }
 .titulo {
@@ -138,10 +139,37 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .titulo{
+        font-size: 24px;
+    }.menu-navegacion{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
     .container{
         width: 95%;
         margin: 20px auto;
         padding: 15px;
     }
-    
+    h2{
+        font-size: 22px;
+        padding: 15px;
+    }
+    .botones-creados{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    footer{
+        padding: 20px 10px;
+    }
+    footer p{
+        font-size: 14px;
+    }
 }
